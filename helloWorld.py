@@ -67,8 +67,6 @@ def getMoney(day):
     a = 0.01
     i = 1
     sum = 0.01
-    if (day == 1):
-        return sum;
     while(i < day):
         a = a * 2
         sum = sum + a
@@ -82,5 +80,5 @@ def soutGrandfather(day):
         i = i + 1
     print("第", i ,"天要给了岳父money:", a)
     print("一共给了岳父money:", getMoney(i))
-soutGrandfather(30)
+soutGrandfather(1)
         

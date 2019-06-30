@@ -62,3 +62,25 @@ def test(*params, exp):
     print("第二个参数是:", params[1])
     print("exp:", exp)
 test(1,4,5,64,35,315,53,exp = 8)
+print("=====================")
+def getMoney(day):
+    a = 0.01
+    i = 1
+    sum = 0.01
+    if (day == 1):
+        return sum;
+    while(i < day):
+        a = a * 2
+        sum = sum + a
+        i = i + 1
+    return sum
+def soutGrandfather(day):
+    a = 0.01
+    i = 1
+    while(i < day):
+        a = a * 2
+        i = i + 1
+    print("第", i ,"天要给了岳父money:", a)
+    print("一共给了岳父money:", getMoney(i))
+soutGrandfather(30)
+        

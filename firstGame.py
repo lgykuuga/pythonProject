@@ -13,11 +13,10 @@ while (num < 3) :
         flag = 1
         break
     else :
-        error = str(num)
         if guess > secret :
-            print("第" + error + "次机会,你猜大了")
+            print("第" , num , "次机会,你猜大了")
         else :
-            print("第" + error + "次机会,你猜小了")
+            print("第" , num , "次机会,你猜小了")
 
         temp = input("你再试试:")
         guess = int(temp)

@@ -82,3 +82,4 @@ def soutGrandfather(day):
     print("一共给了岳父money:", getMoney(i))
 soutGrandfather(1)
         
+print(dateTime.dateTime.now())
